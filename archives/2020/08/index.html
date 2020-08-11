@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>�ҵĲ���</title>
+  <title>Archives: 2020/8 | �ҵĲ���</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="�ҵĲ���">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2020/08/index.html">
 <meta property="og:site_name" content="�ҵĲ���">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="SHI_sh">
@@ -152,251 +152,47 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Java8新特性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/11/Java8%E6%96%B0%E7%89%B9%E6%80%A7/">Java8新特性</a>
-    </h1>
-  
-
-        
-        <a href="/2020/08/11/Java8%E6%96%B0%E7%89%B9%E6%80%A7/" class="archive-article-date">
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/08/11/Java8%E6%96%B0%E7%89%B9%E6%80%A7/" class="archive-article-date">
   	<time datetime="2020-08-11T06:40:06.900Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-11</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-Lamdba表达式"><a href="#1-Lamdba表达式" class="headerlink" title="1.Lamdba表达式"></a>1.Lamdba表达式</br></h1><p>允许把函数作为方法的参数（作为方法的参数传递进方法中），或者把代码本身当做数据处理。</p>
-<h2 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h2><p>代码看起来更简洁；非常容易并行运算；可能代表未来的编程趋势</p>
-<h2 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h2><ol>
-<li>若不用并行计算，很多时候计算速度没有比传统的for 循环快。( 并行计算有时<br>需要预热才显示出效率优势) </li>
-<li>不容易调试。</li>
-<li>若其他程序员没有学过lambda 表达式，代码不容易让其他语言的程序员看懂。</br>
-
-</li>
-</ol>
-<h1 id="2-接口的默认方法和静态方法"><a href="#2-接口的默认方法和静态方法" class="headerlink" title="2.接口的默认方法和静态方法"></a>2.接口的默认方法和静态方法</h1><p>Java 8使用两个新概念扩展了接口的含义：默认方法和静态方法。默认方法使得接口有点类似traits，不过要实现的目标不一样。默认方法使得开发者可以在 不破坏二进制兼容性的前提下，往现存接口中添加新的方法，即不强制那些实现了该接口的类也同时实现这个新加的方法。</p>
-<p>默认方法和抽象方法之间的区别在于抽象方法需要实现，而默认方法不需要。接口提供的默认方法会被接口的实现类继承或者覆写。</br></p>
-<h1 id="3-方法引用"><a href="#3-方法引用" class="headerlink" title="3.方法引用"></a>3.方法引用</h1><p>方法引用使得开发者可以直接引用现存的方法、Java类的构造方法或者实例对象。方法引用和Lambda表达式配合使用，使得java类的构造方法看起来紧凑而简洁，没有很多复杂的模板代码。</p>
-<h1 id="4-新工具"><a href="#4-新工具" class="headerlink" title="4.新工具"></a>4.新工具</h1><p>新的编译工具，如: Nashorn 引擎jjs、 类依 赖分析器jdeps。</p>
-<h1 id="5-Streams"><a href="#5-Streams" class="headerlink" title="5.Streams"></a>5.Streams</h1><p>新增的Stream API（java.util.stream）将生成环境的函数式编程引入了Java库中。这是目前为止最大的一次对Java库的完善，以便开发者能够写出更加有效、更加简洁和紧凑的代码。</p>
-<p>Steam API极大得简化了集合操作。</p>
-<h1 id="6-Date-Time-API"><a href="#6-Date-Time-API" class="headerlink" title="6.Date/Time API"></a>6.Date/Time API</h1><p>Java 8引入了新的Date-Time API(JSR 310)来改进时间、日期的处理。</p>
-<h1 id="7-Optional类"><a href="#7-Optional类" class="headerlink" title="7.Optional类"></a>7.Optional类</h1><p>Java应用中最常见的bug就是空值异常。在Java 8之前，Google Guava引入了Optionals类来解决NullPointerException，从而避免源码被各种null检查污染，以便开发者写出更加整洁的代码。Java 8也将Optional加入了官方库。</p>
-<p>Optional仅仅是一个容易：存放T类型的值或者null。它提供了一些有用的接口来避免显式的null检查。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/11/Java8%E6%96%B0%E7%89%B9%E6%80%A7/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
+      <a class="archive-article-title" href="/2020/08/11/Java8%E6%96%B0%E7%89%B9%E6%80%A7/">Java8新特性</a>
     </h1>
   
 
-        
-        <a href="/2020/07/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-07-22T08:52:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Java栈和队列"><a href="#Java栈和队列" class="headerlink" title="Java栈和队列"></a>Java栈和队列</br></h1><h2 id="Satack"><a href="#Satack" class="headerlink" title="Satack"></a>Satack</br></h2><p>栈：先进后出</br><br>主要方法有：</br></p>
-<ol>
-<li>E push();将元素进栈，调用的是Vector中的addElement()方法。</br></li>
-<li>E pop();弹出栈顶元素（调用peek（）方法），并从栈顶删除该元素。</br></li>
-<li>E peek();返回栈顶元素，不删除。</br></li>
-<li>boolean empty();判断栈是否为空 return size（）==0；</br></li>
-<li>int search(Object o);返回该对象距栈顶位置（第一次出现），没有该对象返回-1</br>
-## Queue
-</br>
-队列：先进先出</br>
-主要方法有：</br></li>
-<li>boolean add(E e);向栈顶插入元素，超出指定长度抛出异常</br></li>
-<li>boolean offer(E e);向栈顶插入元素，不抛出异常</br></li>
-<li>E remove();返回队顶元素并删除删除，如果队列为空则抛出异常。</br></li>
-<li>E poll();返回队顶元素并删除删除，如果队列为空会返回null。</br></li>
-<li>E element();返回队顶对象（不删），如果为空返回null。</br></li>
-<li>E peek();返回队顶对象（不删），如果为空会抛出异常。</br>
+        <div class="article-info info-on-right">
+          
+          
 
-
-
-</li>
-</ol>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<hr>
-<p>##参考文献</p>
-<p><a href="http://www.shishihuan.cn" target="_blank" rel="noopener">www.shishihuan.cn</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/22/hello-world/" class="archive-article-date">
-  	<time datetime="2020-07-22T08:38:37.878Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/22/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -418,9 +214,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
