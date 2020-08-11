@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>我的第一篇博客文章 | �ҵĲ���</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##第一章内容  ##第二章内容  ##参考文献 www.shishihuan.cn">
+  <meta name="description" content="Java栈和队列Satack栈：先进后出主要方法有：  E push();将元素进栈，调用的是Vector中的addElement()方法。 E pop();弹出栈顶元素（调用peek（）方法），并从栈顶删除该元素。 E peek();返回栈顶元素，不删除。 boolean empty();判断栈是否为空 return size（）&#x3D;&#x3D;0； int search(Object o);返回该对象距栈">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇博客文章">
 <meta property="og:url" content="http://yoursite.com/2020/07/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="�ҵĲ���">
-<meta property="og:description" content="##第一章内容  ##第二章内容  ##参考文献 www.shishihuan.cn">
+<meta property="og:description" content="Java栈和队列Satack栈：先进后出主要方法有：  E push();将元素进栈，调用的是Vector中的addElement()方法。 E pop();弹出栈顶元素（调用peek（）方法），并从栈顶删除该元素。 E peek();返回栈顶元素，不删除。 boolean empty();判断栈是否为空 return size（）&#x3D;&#x3D;0； int search(Object o);返回该对象距栈">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-22T08:52:32.000Z">
-<meta property="article:modified_time" content="2020-07-22T08:59:09.235Z">
+<meta property="article:modified_time" content="2020-08-11T02:04:39.137Z">
 <meta property="article:author" content="SHI_sh">
 <meta name="twitter:card" content="summary">
   
@@ -174,9 +174,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##第一章<br>内容</p>
+        <h1 id="Java栈和队列"><a href="#Java栈和队列" class="headerlink" title="Java栈和队列"></a>Java栈和队列</br></h1><h2 id="Satack"><a href="#Satack" class="headerlink" title="Satack"></a>Satack</br></h2><p>栈：先进后出</br><br>主要方法有：</br></p>
+<ol>
+<li>E push();将元素进栈，调用的是Vector中的addElement()方法。</br></li>
+<li>E pop();弹出栈顶元素（调用peek（）方法），并从栈顶删除该元素。</br></li>
+<li>E peek();返回栈顶元素，不删除。</br></li>
+<li>boolean empty();判断栈是否为空 return size（）==0；</br></li>
+<li>int search(Object o);返回该对象距栈顶位置（第一次出现），没有该对象返回-1</br>
+## Queue
+</br>
+队列：先进先出</br>
+主要方法有：</br></li>
+<li>boolean add(E e);向栈顶插入元素，超出指定长度抛出异常</br></li>
+<li>boolean offer(E e);向栈顶插入元素，不抛出异常</br></li>
+<li>E remove();返回队顶元素并删除删除，如果队列为空则抛出异常。</br></li>
+<li>E poll();返回队顶元素并删除删除，如果队列为空会返回null。</br></li>
+<li>E element();返回队顶对象（不删），如果为空返回null。</br></li>
+<li>E peek();返回队顶对象（不删），如果为空会抛出异常。</br>
+
+
+
+</li>
+</ol>
 <hr>
-<p>##第二章<br>内容</p>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
 <hr>
 <p>##参考文献</p>
 <p><a href="http://www.shishihuan.cn" target="_blank" rel="noopener">www.shishihuan.cn</a></p>
